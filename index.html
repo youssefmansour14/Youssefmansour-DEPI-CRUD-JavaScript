@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Product Manager</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet">
+</head>
+<body>
+    <div class="container mt-4">
+        <h1 class="text-center mb-4">Manage Products</h1>
+        <form class="mb-4">
+            <input class="form-control mb-2" type="text" id="productName" placeholder="Product Name">
+            <input class="form-control mb-2" type="number" id="productPrice" placeholder="Price">
+            <textarea class="form-control mb-2" id="productDetails" placeholder="Details"></textarea>
+            <button id="productActionButton" class="btn btn-primary w-100" type="button" onclick="addProduct()">Add Product</button>
+        </form>
+
+        <h2 class="text-center">Product List</h2>
+        <table class="table table-bordered text-center">
+            <thead>
+                <tr>
+                    <th>Name</th>
+                    <th>Price</th>
+                    <th>Details</th>
+                    <th>Actions</th>
+                </tr>
+            </thead>
+            <tbody id="productTable"></tbody>
+        </table>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
